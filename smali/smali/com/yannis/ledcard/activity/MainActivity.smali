@@ -236,7 +236,7 @@
 
     const/16 v1, 0x1f
 
-    const-string v2, "\u7533\u8bf7\u6743\u9650"
+    const-string v2, "Request permission"
 
     const-string v3, "=====================\u6743\u9650\u90fd\u5df2\u7ecf\u83b7\u53d6"
 
@@ -1547,9 +1547,9 @@
 
     const/16 p2, 0x6e
 
-    const-string v0, "\u540c\u610f\u6743\u9650"
+    const-string v0, "Permission granted"
 
-    const-string v1, "\u6743\u9650\u62d2\u7edd"
+    const-string v1, "Permission denied"
 
     const/4 v2, 0x0
 

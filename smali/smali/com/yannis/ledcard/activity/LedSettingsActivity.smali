@@ -410,7 +410,7 @@
     .line 100
     iget-object v0, p0, Lcom/yannis/ledcard/activity/LedSettingsActivity;->tvRight:Landroid/widget/TextView;
 
-    const-string v1, "\u5220\u9664\u56fe\u7247"
+    const-string v1, "Delete Image"
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -983,7 +983,7 @@
     .line 190
     iget-object p1, p0, Lcom/yannis/ledcard/activity/LedSettingsActivity;->tvRight:Landroid/widget/TextView;
 
-    const-string v1, "\u5b8c\u6210"
+    const-string v1, "Done"
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -993,7 +993,7 @@
     :cond_0
     iget-object p1, p0, Lcom/yannis/ledcard/activity/LedSettingsActivity;->tvRight:Landroid/widget/TextView;
 
-    const-string v1, "\u5220\u9664\u56fe\u7247"
+    const-string v1, "Delete Image"
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1094,7 +1094,7 @@
 
     if-nez p1, :cond_0
 
-    const-string p1, "\u70b9\u51fb\u4e3a\u7a7a"
+    const-string p1, "Nothing selected"
 
     .line 279
     invoke-virtual {p0, p1}, Lcom/yannis/ledcard/activity/LedSettingsActivity;->showToast(Ljava/lang/String;)V
