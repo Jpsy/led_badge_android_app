@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_title" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="修改" />
+    <com.yannis.ledcard.widget.LEDView android:layout_gravity="center_horizontal" android:id="@id/ledBmpView" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_below="@id/tv_title" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_title" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/ledBmpView">
+        <ImageView android:id="@id/iv_restore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_restart" />
+        <ImageView android:id="@id/iv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/icon_clear" />
+        <ImageView android:id="@id/iv_reverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/icon_reverse" />
+    </LinearLayout>
+    <RelativeLayout android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ledBmpView" android:paddingStart="30.0dip" android:paddingEnd="30.0dip">
+        <Button android:textSize="16.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_save" android:background="@drawable/btn_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存" android:layout_alignParentLeft="true" android:paddingStart="@dimen/activity_horizontal_margin" android:layout_alignParentStart="true" />
+        <Button android:textSize="16.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_delete" android:background="@drawable/btn_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

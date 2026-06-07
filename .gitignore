@@ -1,0 +1,9 @@
+# Build artifacts
+*.apk
+debug.keystore
+
+# Generated/intermediate
+decompiled/
+extracted/
+smali/build/
+stage/

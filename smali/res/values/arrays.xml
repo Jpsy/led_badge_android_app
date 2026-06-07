@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modestr">
+        <item>left</item>
+        <item>right</item>
+        <item>up</item>
+        <item>down</item>
+        <item>fixed</item>
+        <item>animation</item>
+        <item>snowflake</item>
+        <item>picture</item>
+        <item>laser</item>
+    </string-array>
+    <integer-array name="speedStr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <include layout="@layout/layout_toolbar" />
+    <GridView android:id="@id/gv_icons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginTop="8.0dip" android:horizontalSpacing="3.0dip" android:verticalSpacing="1.0dip" android:numColumns="8" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/send_content" />
+    <EditText android:textSize="16.0sp" android:id="@id/ed_send_content" android:background="@drawable/textview_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="اليوم هو يوم السبت " android:lines="3" />
+    <FrameLayout android:id="@id/fl" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/bmp" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="60.0dip" app:hasBottomLine="true" app:hasTopLine="true" app:label="@string/daozi" app:labelColor="@android:color/black" />
+        <CheckBox android:id="@id/cb_reverse" android:background="@drawable/cb_bg" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.yannis.ledcard.widget.ItemView android:id="@id/item_speed" android:layout_width="fill_parent" android:layout_height="50.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:hasBottomLine="true" app:label="@string/speed" app:labelColor="@android:color/black" app:value="5" app:valueColor="@android:color/black" />
+    <com.yannis.ledcard.widget.ItemView android:id="@id/item_mode" android:layout_width="fill_parent" android:layout_height="50.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:hasBottomLine="true" app:label="@string/mode" app:labelColor="@android:color/black" app:value="激光" app:valueColor="@android:color/black" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="50.0dip" app:hasBottomLine="true" app:label="@string/flash" app:labelColor="@android:color/black" />
+        <CheckBox android:id="@id/cb_flash" android:background="@drawable/cb_bg" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="50.0dip" app:hasBottomLine="true" app:label="@string/marquee" app:labelColor="@android:color/black" />
+        <CheckBox android:id="@id/cb_marquee" android:background="@drawable/cb_bg" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="60.0dip" app:hasBottomLine="true" app:label="@string/colors" app:labelColor="@android:color/black" />
+    </RelativeLayout>
+</LinearLayout>

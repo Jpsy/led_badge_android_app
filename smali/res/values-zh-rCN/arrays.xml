@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modestr">
+        <item>左移</item>
+        <item>右移</item>
+        <item>上移</item>
+        <item>下移</item>
+        <item>固定</item>
+        <item>动画</item>
+        <item>雪花</item>
+        <item>画卷</item>
+        <item>激光</item>
+    </string-array>
+    <integer-array name="speedStr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modestr">
+        <item>왼쪽</item>
+        <item>오른쪽</item>
+        <item>위로</item>
+        <item>아래로</item>
+        <item>고정</item>
+        <item>애니메이션</item>
+        <item>스노우</item>
+        <item>펼치기</item>
+        <item>레이저</item>
+    </string-array>
+    <integer-array name="speedStr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <include layout="@layout/layout_toolbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_pics" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="【原图】" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="【黑白】" android:layout_weight="1.0" />
+            <TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="【真实图】" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tv_v" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_pic" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/btn_bg" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_wb" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/btn_bg" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.yannis.ledcard.widget.LEDView android:id="@id/iv_ble" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调节黑白阈值:" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/sb" android:layout_width="255.0dip" android:layout_height="wrap_content" android:max="100" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/tv_tmp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="255" />
+    </LinearLayout>
+    <com.yannis.ledcard.widget.ItemView android:id="@id/item_speed" android:layout_width="fill_parent" android:layout_height="60.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:hasBottomLine="true" app:label="@string/speed" app:labelColor="@android:color/black" app:value="5" app:valueColor="@android:color/black" />
+    <com.yannis.ledcard.widget.ItemView android:id="@id/item_mode" android:layout_width="fill_parent" android:layout_height="60.0dip" android:foreground="?android:selectableItemBackground" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:hasBottomLine="true" app:label="@string/mode" app:labelColor="@android:color/black" app:value="激光" app:valueColor="@android:color/black" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="60.0dip" app:hasBottomLine="true" app:label="@string/flash" app:labelColor="@android:color/black" />
+        <CheckBox android:id="@id/cb_flash" android:background="@drawable/cb_bg" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <com.yannis.ledcard.widget.ItemView android:layout_width="fill_parent" android:layout_height="60.0dip" app:hasBottomLine="true" app:label="@string/marquee" app:labelColor="@android:color/black" />
+        <CheckBox android:id="@id/cb_marquee" android:background="@drawable/cb_bg" android:focusable="false" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:button="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <Button android:textSize="18.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_send" android:background="@drawable/btn_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/send" />
+</LinearLayout>
