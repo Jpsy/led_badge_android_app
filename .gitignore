@@ -1,8 +1,14 @@
-# Build artifacts
-*.apk
+# Original APK (don't redistribute — users pull from their own device)
+ledcard.apk
+
+# Intermediate build artifacts
+ledcard-patched-unsigned.apk
+ledcard-patched-aligned.apk
+ledcard-patched.apk.idsig
 debug.keystore
 
 # Generated/intermediate
+decoded/
 decompiled/
 extracted/
 smali/build/
