@@ -21,7 +21,21 @@ The patched APK in this repo is `ledcard-patched.apk`.
 ## Install
 
 The patched APK is signed with a self-generated debug key, so it cannot
-overwrite the Play Store install. You need to uninstall the original first.
+overwrite the Play Store install — **you must uninstall the original first**.
+
+### Option A: Directly on the phone (no PC needed)
+
+1. On the phone, uninstall the existing **LED Card** / **LEDBadge** app
+   (Settings → Apps → LED Card → Uninstall).
+2. Open this page in the phone's browser and tap to download:
+   **[ledcard-patched.apk](https://github.com/Jpsy/led_badge_android_app/raw/main/ledcard-patched.apk)**
+3. Tap the downloaded file. Android will ask whether to allow your browser to
+   install apps — grant it ("Install unknown apps" → your browser → Allow).
+4. Tap **Install**. If Google Play Protect warns about an "unverified" app
+   (it will — the APK is signed with a personal key, not Yannis's Play Store
+   key), tap **More details → Install anyway**.
+
+### Option B: From a computer with ADB
 
 ```sh
 adb uninstall com.yannis.ledcard
