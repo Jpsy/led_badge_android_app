@@ -41,7 +41,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="about">ABOUT</string>
     <string name="agree">Agree</string>
-    <string name="app_name">LEDBadge</string>
+    <string name="app_name">LEDBadge+</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string name="cancel">Cancel</string>

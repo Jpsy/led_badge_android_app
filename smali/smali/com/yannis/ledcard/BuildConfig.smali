@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final APPLICATION_ID:Ljava/lang/String; = "com.yannis.ledcard"
+.field public static final APPLICATION_ID:Ljava/lang/String; = "io.github.jpsy.ledbadge"
 
 .field public static final BUILD_TYPE:Ljava/lang/String; = "release"
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.yannis.ledcard" platformBuildVersionCode="33" platformBuildVersionName="13">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="io.github.jpsy.ledbadge" platformBuildVersionCode="33" platformBuildVersionName="13">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -28,11 +28,11 @@
         <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.lzy.imagepicker.ui.ImageCropActivity" android:theme="@style/ImagePickerTheme"/>
         <activity android:configChanges="orientation|screenSize" android:name="com.lzy.imagepicker.ui.ImagePreviewActivity" android:theme="@style/ImagePickerThemeFullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity" android:theme="@style/ImagePickerThemeFullScreen"/>
-        <provider android:authorities="com.yannis.ledcard.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.lzy.imagepicker.ImagePickerProvider">
+        <provider android:authorities="io.github.jpsy.ledbadge.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.lzy.imagepicker.ImagePickerProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
         </provider>
         <activity android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity" android:process=":error_activity"/>
-        <provider android:authorities="com.yannis.ledcard.customactivityoncrashinitprovider" android:exported="false" android:initOrder="101" android:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider"/>
+        <provider android:authorities="io.github.jpsy.ledbadge.customactivityoncrashinitprovider" android:exported="false" android:initOrder="101" android:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider"/>
         <service android:exported="false" android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"/>
         <receiver android:exported="true" android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver">
             <intent-filter>

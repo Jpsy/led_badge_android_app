@@ -13,3 +13,4 @@ decompiled/
 extracted/
 smali/build/
 stage/
+*.orig
