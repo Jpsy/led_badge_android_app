@@ -38,6 +38,7 @@ echo "==> 4. Apply patched files to decoded tree"
 cp smali/build/apk/classes.dex                decoded/dex/classes.dex
 cp smali/assets/ASC11                         decoded/root/assets/ASC11
 cp smali/res/values/strings.xml               decoded/resources/package_1/res/values/strings.xml
+cp smali/res/layout/activity_about.xml        decoded/resources/package_1/res/layout/activity_about.xml
 # Patch the manifest IN PLACE — don't overwrite with smali/AndroidManifest.xml,
 # because apktool strips versionCode/versionName/uses-sdk out of the manifest
 # and stores them in apktool.yml. APKEditor's decoded version keeps them, so
@@ -45,6 +46,13 @@ cp smali/res/values/strings.xml               decoded/resources/package_1/res/va
 sed -i 's|package="com.yannis.ledcard"|package="io.github.jpsy.ledbadge"|' decoded/AndroidManifest.xml
 sed -i 's|com.yannis.ledcard.provider|io.github.jpsy.ledbadge.provider|' decoded/AndroidManifest.xml
 sed -i 's|com.yannis.ledcard.customactivityoncrashinitprovider|io.github.jpsy.ledbadge.customactivityoncrashinitprovider|' decoded/AndroidManifest.xml
+# Derive the patch version from the git commit count, append to upstream's
+# 3.5.1, and bump versionCode so Android sees each rebuild as an upgrade.
+PATCH=$(git rev-list --count HEAD 2>/dev/null || echo 0)
+sed -i "s|android:versionName=\"3.5.1\"|android:versionName=\"3.5.1+plus.${PATCH}\"|" decoded/AndroidManifest.xml
+sed -i "s|android:versionCode=\"49\"|android:versionCode=\"$((49000 + PATCH))\"|" decoded/AndroidManifest.xml
+echo "  versionName = 3.5.1+plus.${PATCH}"
+echo "  versionCode = $((49000 + PATCH))"
 # Update APKEditor's resource-table package name to match the manifest
 python3 -c "
 import json
