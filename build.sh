@@ -47,6 +47,8 @@ p['package_name'] = 'io.github.jpsy.ledbadge'
 with open('decoded/resources/package_1/package.json','w') as f: json.dump(p, f, indent=2)
 print('  package.json package_name =', p['package_name'])
 "
+# Regenerate launcher icons + splash with 'plus' line so we're distinct from the upstream
+python3 make_icons.py | tail -3
 
 echo "==> 5. Rebuild APK with APKEditor"
 rm -f ledcard-patched-unsigned.apk
