@@ -6255,5 +6255,197 @@
 
     move-result-object p0
 
+    const/16 v0, 0xe0
+
+    const/16 v1, 0x8
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xe9
+
+    const/16 v1, 0x9
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xe8
+
+    const/16 v1, 0xa
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xea
+
+    const/16 v1, 0xb
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xe7
+
+    const/16 v1, 0xc
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xee
+
+    const/16 v1, 0xd
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xf4
+
+    const/16 v1, 0xe
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xe6
+
+    const/16 v1, 0xf
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xf8
+
+    const/16 v1, 0x10
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xe5
+
+    const/16 v1, 0x11
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x105
+
+    const/16 v1, 0x12
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x107
+
+    const/16 v1, 0x13
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x119
+
+    const/16 v1, 0x14
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x142
+
+    const/16 v1, 0x15
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x144
+
+    const/16 v1, 0x16
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xf3
+
+    const/16 v1, 0x17
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x15b
+
+    const/16 v1, 0x18
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x17a
+
+    const/16 v1, 0x19
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0x17c
+
+    const/16 v1, 0x1a
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xc9
+
+    const/16 v1, 0x1b
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xc7
+
+    const/16 v1, 0x1c
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xc6
+
+    const/16 v1, 0x1d
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xd8
+
+    const/16 v1, 0x1e
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
+    const/16 v0, 0xc5
+
+    const/16 v1, 0x1f
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object p0
+
     return-object p0
 .end method
