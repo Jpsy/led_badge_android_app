@@ -38,7 +38,13 @@ echo "==> 4. Apply patched files to decoded tree"
 cp smali/build/apk/classes.dex                decoded/dex/classes.dex
 cp smali/assets/ASC11                         decoded/root/assets/ASC11
 cp smali/res/values/strings.xml               decoded/resources/package_1/res/values/strings.xml
-cp smali/AndroidManifest.xml                  decoded/AndroidManifest.xml
+# Patch the manifest IN PLACE — don't overwrite with smali/AndroidManifest.xml,
+# because apktool strips versionCode/versionName/uses-sdk out of the manifest
+# and stores them in apktool.yml. APKEditor's decoded version keeps them, so
+# we only rewrite the bits we care about.
+sed -i 's|package="com.yannis.ledcard"|package="io.github.jpsy.ledbadge"|' decoded/AndroidManifest.xml
+sed -i 's|com.yannis.ledcard.provider|io.github.jpsy.ledbadge.provider|' decoded/AndroidManifest.xml
+sed -i 's|com.yannis.ledcard.customactivityoncrashinitprovider|io.github.jpsy.ledbadge.customactivityoncrashinitprovider|' decoded/AndroidManifest.xml
 # Update APKEditor's resource-table package name to match the manifest
 python3 -c "
 import json
