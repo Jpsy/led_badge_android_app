@@ -63,10 +63,17 @@ icon in the launcher and uninstall normally.
 
 ## Build it yourself
 
+> **Easiest path: ask Claude Code.** This repo ships with a `CLAUDE.md`
+> that primes [Claude Code](https://claude.com/claude-code) with everything
+> it needs to make changes, rebuild, install, and debug. Open the repo
+> with Claude Code, describe what you want to change ("tweak the ö dots,"
+> "translate this Chinese button," "add support for Czech ě/š/č"), and it
+> will drive the rest. The manual steps below are documented for anyone
+> who wants to drive the toolchain by hand.
+
 A one-shot build is provided as `./build.sh`. The script regenerates the font,
 assembles the smali, decodes the original APK, swaps in the patched bits,
-rebuilds, aligns, and signs. The manual steps below are documented in case you
-want to drive parts of the pipeline yourself.
+rebuilds, aligns, and signs.
 
 ### Requirements
 
