@@ -1,0 +1,12 @@
+# Hand-written Python uses tab indentation. The bulk of this repo is decompiled
+# APK output (smali/xml/png under decoded/, decompiled/, extracted/, smali/) —
+# generated artifacts left to editor defaults, so the rules below are scoped to
+# the only hand-edited source.
+root = true
+
+[*.py]
+indent_style = tab
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
